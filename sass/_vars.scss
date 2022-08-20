@@ -1,0 +1,7 @@
+$pink-color: #F16D7F;
+$shadowStyle: 0 0 10px rgba(0, 0, 0, 0.5);
+
+@mixin grid-temp-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

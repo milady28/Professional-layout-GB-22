@@ -1,0 +1,104 @@
+.reg-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 96px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    margin-right: 128px;
+  }
+
+  &__legend {
+    font-size: 16px;
+    font-weight: 300;
+    color: #222222;
+  }
+
+  &__legend {
+    font-size: 16px;
+    font-weight: 300;
+    color: #222222;
+  }
+
+  &__radio-block {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__radio {
+    margin-right: 10px;
+
+    &-label {
+      margin-right: 20px;
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+
+  &__input {
+    margin-top: 20px;
+    padding: 10px 0 10px 18px;
+    font-weight: 300;
+    border: 1px solid #A4A4A4;
+
+    &::placeholder {
+      font-weight: 300;
+      color: #B1B1B1;
+    }
+  }
+
+  &__add-info {
+    margin-top: 15px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #B1B1B1;
+  }
+
+  &__submit {
+    position: relative;
+    width: 168px;
+    margin-top: 40px;
+
+    &-btn {
+      width: 100%;
+      padding: 16px 30px 16px 0;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      border: none;
+      background-color: $pink-color;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 18px;
+      right: 30px;
+      width: 18px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-image: url(image/right-arrow.svg);
+    }
+  }
+
+  &__info {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__title {
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+  }
+}

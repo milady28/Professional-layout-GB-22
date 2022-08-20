@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    background-color: #222222;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__menu,
+  &__account {
+    margin-right: 32px;
+  }
+
+  &__nav {
+    // display: none;
+  }
+}
