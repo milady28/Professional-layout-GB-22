@@ -1,61 +1,115 @@
-.filters {
+.filter-sort {
+  padding-top: 39px;
   display: flex;
-  margin: 50px 0 64px 0;
+  gap: 30px;
 
-  &__wrapper--properties {
-    margin-left: 300px;
-  }
+  .filter {
+    width: 100%;
+    padding: 13px 16px 16px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
 
-  .properties {
-    &__list {
-      display: flex;
+    &[open] {
+      background-color: #FFF;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
 
-    &__item {
-      margin-right: 30px;
+    &-box {
+      position: relative;
+      height: 40px;
+      width: 360px;
     }
-
-    &__name {
-      display: flex;
-      align-items: center;
+        
+    &__link {
+      font-style: normal;
       font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
       color: #6F6E6E;
+      cursor: pointer;
 
-      &::after {
-        content: '';
-        position: relative;
-        width: 10px;
-        height: 5px;
-        margin-left: 10px;
-        background-image: url(image/filter-arrow.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
+      &:hover {
+        color: $pink-color;
       }
     }
+        
+    &__box {
+      display: flex;
+      flex-direction: column;
+      padding: 24px 16px;
+      gap: 11px;
+    }
+        
+    &__summary {
+      display: flex;
+      gap: 11px;
+      align-items: center;
+      cursor: pointer;
 
-    &__list-sub {
-      display: none;
+      &[open] {
+        background: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+        & .filter__summary {
+          color: $pink-color;
+        }
+            
+        & .filter__img path {
+          fill: $pink-color;
+        }
+      }
+    }
+        
+    &__category {
+      margin-top: 16px;
+      cursor: pointer;
+
+      &-summary {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        padding: 8px 11px 11px;
+        border-left: 5px solid $pink-color;
+        border-bottom: 1px solid #EBEBEB;
+      }
+
+      &[open] .filter__category-summary {
+        color: $pink-color;
+      }    
     }
   }
 
-  &__title {
+  .sort {
     display: flex;
+    gap: 28px;
     align-items: center;
-    text-transform: uppercase;
 
-    &::after {
-      content: '';
+    &__details {
       position: relative;
-      width: 15px;
-      height: 10px;
-      margin-left: 10px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-image: url(image/filter-icon.svg);
     }
-  }
-
-  &__categories {
-    display: none;
+        
+    &__summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+        
+    &__content {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 79px;
+      padding: 7px 9px 11px;
+      background: #FFFFFF;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+      z-index: 1;
+      top: 22px;
+      left: -9px;
+    }
   }
 }
