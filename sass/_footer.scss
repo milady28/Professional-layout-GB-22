@@ -1,0 +1,50 @@
+.footer {
+  background-color: #222224;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__copyright {
+    color: #FBFBFB;
+  }
+
+  .social {
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      margin-right: 8px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      background-color: #FFFFFF;
+
+      &:hover {
+        background-color: $pink-color;
+        transition: 0.1s;
+
+        .social__img {
+          fill: #FFF;
+        }
+      }
+    }
+
+    &__img {
+      fill: #000;
+    }
+  }
+}

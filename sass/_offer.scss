@@ -1,0 +1,23 @@
+.offer {
+  position: relative;
+  min-height: 764px;
+  background-color: #F1E4E6;
+  background-image: url(image/offer-bg.png);
+  background-position: left bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    padding-left: 16px;
+    border-left: 12px solid $pink-color;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &--main {
+    font-weight: 900;
+  }
+}

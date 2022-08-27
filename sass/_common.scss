@@ -1,0 +1,92 @@
+body {
+  font-family: 'Lato', sans-serif, 'Arial';
+  font-weight: 600;
+  font-size: 14px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.pink-text {
+  color: $pink-color;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.check-mark::before {
+  content: '';
+  position: relative;
+  width: 20px;
+  height: 16px;
+  padding-right: 22px;
+  background-image: url(image/check-mark.svg);
+  background-repeat: no-repeat;
+}
+
+.page-heading {
+  background-color: #F8F3F4;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $pink-color;
+    text-transform: uppercase;
+  }
+
+  &__breadcrumbs {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-transform: uppercase;
+  }
+}
+
+.pink-btn {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: $pink-color;
+  background-color: inherit;
+  border: 1px solid $pink-color;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: $pink-color;
+  }
+}
