@@ -8,6 +8,7 @@
     justify-content: space-between;
     padding-top: 96px;
     padding-bottom: 126px;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   &__block {
@@ -33,6 +34,7 @@
 
   &__text {
     padding-top: 10px;
+    text-align: center;
     font-weight: 400;
     font-size: 18px;
 
@@ -74,5 +76,18 @@
     border: none;
     border-radius: 0 16px 16px 0;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subs {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__block--left {
+      margin-bottom: 46px;
+    }
   }
 }

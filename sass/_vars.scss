@@ -5,3 +5,13 @@ $shadowStyle: 0 0 10px rgba(0, 0, 0, 0.5);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+@mixin grid-temp-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin grid-temp-1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}

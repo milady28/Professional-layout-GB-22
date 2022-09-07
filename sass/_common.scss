@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Lato', sans-serif, 'Arial';
   font-weight: 400;
   font-size: 14px;
@@ -23,6 +25,10 @@ h2,
 h3,
 h4 {
   margin: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 .center {
@@ -88,5 +94,38 @@ h4 {
   &:hover {
     color: #FFFFFF;
     background-color: $pink-color;
+  }
+}
+
+@media (max-width: 1140px) {
+  .center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+}
+
+@media (max-width: 768px) {
+  .center {
+    padding-left: calc(50% - 200px);
+    padding-right: calc(50% - 200px);
+  }
+}
+
+@media (max-width: 375px) {
+  .center {
+    padding-left: calc(50% - 170px);
+    padding-right: calc(50% - 170px);
+  }
+
+  .page-heading__wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }

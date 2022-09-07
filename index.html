@@ -24,7 +24,7 @@
       </div>
       <div class="header__wrapper header__wrapper--right">
         <div class="header__menu">
-          <a href="catalog.html"><img src="image/burger-icon.svg" alt="Меню"></a>
+          <label for="header__check"><img src="image/burger-icon.svg" alt="Меню"></label>
         </div>
         <div class="header__account">
           <a href="registration.html"><img src="image/personal-icon.svg" alt="Личный кабинет"></a>
@@ -34,37 +34,38 @@
         </div>
       </div>
     </div>
+    <input class="header__checkbox" id="header__check" type="checkbox">
     <nav class="header__nav nav">
-      <h3 class="nav__title">Menu</Main></h3>
+      <h3 class="nav__title">Menu</h3>
       <ul class="nav__category-list">
         <li class="nav__category-item">
           <h4 class="nav__category-name pink-text">MAN</h4>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#">Accessories</a></li>
-            <li class="nav__item"><a href="#">Bags</a></li>
-            <li class="nav__item"><a href="#">Denim</a></li>
-            <li class="nav__item"><a href="#">T-Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Accessories</a></li>
+            <li class="nav__item"><a href="catalog.html">Bags</a></li>
+            <li class="nav__item"><a href="catalog.html">Denim</a></li>
+            <li class="nav__item"><a href="catalog.html">T-Shirts</a></li>
           </ul>
         </li>
         <li class="nav__category-item">
           <h4 class="nav__category-name pink-text">WOMAN</h4>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#">Accessories</a></li>
-            <li class="nav__item"><a href="#">Jackets & Coats</a></li>
-            <li class="nav__item"><a href="#">Polos</a></li>
-            <li class="nav__item"><a href="#">T-Shirts</a></li>
-            <li class="nav__item"><a href="#">Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Accessories</a></li>
+            <li class="nav__item"><a href="catalog.html">Jackets & Coats</a></li>
+            <li class="nav__item"><a href="catalog.html">Polos</a></li>
+            <li class="nav__item"><a href="catalog.html">T-Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Shirts</a></li>
           </ul>
         </li>
         <li class="nav__category-item">
           <h4 class="nav__category-name pink-text">KIDS</h4>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#">Accessories</a></li>
-            <li class="nav__item"><a href="#">Jackets & Coats</a></li>
-            <li class="nav__item"><a href="#">Polos</a></li>
-            <li class="nav__item"><a href="#">T-Shirts</a></li>
-            <li class="nav__item"><a href="#">Shirts</a></li>
-            <li class="nav__item"><a href="#">Bags</a></li>
+            <li class="nav__item"><a href="catalog.html">Accessories</a></li>
+            <li class="nav__item"><a href="catalog.html">Jackets & Coats</a></li>
+            <li class="nav__item"><a href="catalog.html">Polos</a></li>
+            <li class="nav__item"><a href="catalog.html">T-Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Bags</a></li>
           </ul>
         </li>
       </ul>
@@ -73,14 +74,14 @@
   <main class="main">
     <section class="main__offer offer center">
       <div class="offer__text">
-        <p class="offer__text--main">THE BRAND</p>
-        <p>OF LUXERIOUS <span class="pink-text">FASHION</span></span></p>
+        <h1 class="offer__text--main">THE BRAND</h1>
+        <p>OF LUXERIOUS <span class="pink-text">FASHION</span></p>
       </div>
     </section>
     <section class="main__categories categories center">
       <ul class="categories__list">
         <li class="categories__item categories__item--women">
-          <a class="categories__link" href="#">
+          <a class="categories__link" href="catalog.html">
             <div class="categories__wrapper">
               <p class="categories__text">30% OFF</p>
               <h3 class="categories__title">FOR WOMEN</h3>
@@ -88,7 +89,7 @@
           </a>
         </li>
         <li class="categories__item categories__item--men">
-          <a class="categories__link" href="#">
+          <a class="categories__link" href="catalog.html">
             <div class="categories__wrapper">
               <p class="categories__text">HOT DEAL</p>
               <h3 class="categories__title">FOR MEN</h3>
@@ -96,7 +97,7 @@
           </a>
         </li>
         <li class="categories__item categories__item--kids">
-          <a class="categories__link" href="#">
+          <a class="categories__link" href="catalog.html">
             <div class="categories__wrapper">
               <p class="categories__text">NEW ARRIVALS</p>
               <h3 class="categories__title">FOR KIDS</h3>
@@ -104,7 +105,7 @@
           </a>
         </li>
         <li class="categories__item categories__item--accesories">
-          <a class="categories__link" href="#">
+          <a class="categories__link" href="catalog.html">
             <div class="categories__wrapper">
               <p class="categories__text">LUXIROUS & TRENDY</p>
               <h3 class="categories__title">ACCESORIES</h3>
@@ -120,69 +121,69 @@
       </div>
       <ul class="featured products__list">
         <li class="products__item">
-          <a class="products__link" href="#">
+          <a class="products__link" href="product.html">
             <img src="image/featured-item-1.png" alt="Рекомендованный товар">
             <div class="products__text-wrapper">
               <h3 class="products__name">ELLERY X M'O CAPSULE</h3>
               <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
               <p class="products__price">$52.00</p>    
             </div>
-            <a href="#" class="products__add2cart">Add to Cart</a>
+            <span class="products__add2cart">Add to Cart</span>
           </a>
         </li>
         <li class="products__item">
-          <a class="products__link" href="#">
+          <a class="products__link" href="product.html">
             <img src="image/featured-item-2.png" alt="Рекомендованный товар">
             <div class="products__text-wrapper">
               <h3 class="products__name">ELLERY X M'O CAPSULE</h3>
               <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
               <p class="products__price">$52.00</p>    
             </div>
-            <a href="#" class="products__add2cart">Add to Cart</a>
+            <span class="products__add2cart">Add to Cart</span>
           </a>
         </li>
         <li class="products__item">
-          <a class="products__link" href="#">
+          <a class="products__link" href="product.html">
             <img src="image/featured-item-3.png" alt="Рекомендованный товар">
             <div class="products__text-wrapper">
               <h3 class="products__name">ELLERY X M'O CAPSULE</h3>
               <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
               <p class="products__price">$52.00</p>    
             </div>
-            <a href="#" class="products__add2cart">Add to Cart</a>
+            <span class="products__add2cart">Add to Cart</span>
           </a>
         </li>
         <li class="products__item">
-          <a class="products__link" href="#">
+          <a class="products__link" href="product.html">
             <img src="image/featured-item-4.png" alt="Рекомендованный товар">
             <div class="products__text-wrapper">
               <h3 class="products__name">ELLERY X M'O CAPSULE</h3>
               <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
               <p class="products__price">$52.00</p>    
             </div>
-            <a href="#" class="products__add2cart">Add to Cart</a>
+            <span class="products__add2cart">Add to Cart</span>
           </a>
         </li>
         <li class="products__item">
-          <a class="products__link" href="#">
+          <a class="products__link" href="product.html">
             <img src="image/featured-item-5.png" alt="Рекомендованный товар">
             <div class="products__text-wrapper">
               <h3 class="products__name">ELLERY X M'O CAPSULE</h3>
               <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
               <p class="products__price">$52.00</p>    
             </div>
-            <a href="#" class="products__add2cart">Add to Cart</a>
+            <span class="products__add2cart">Add to Cart</span>
           </a>
         </li>
         <li class="products__item">
-          <a class="products__link" href="#">
+          <a class="products__link" href="product.html">
             <img src="image/featured-item-6.png" alt="Рекомендованный товар">
             <div class="products__text-wrapper">
               <h3 class="products__name">ELLERY X M'O CAPSULE</h3>
               <p class="products__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
               <p class="products__price">$52.00</p>    
             </div>
-            <a href="#" class="products__add2cart">Add to Cart</a>
+            <span class="products__add2cart">Add to Cart</span>
           </a>
         </li>
       </ul>
@@ -217,7 +218,7 @@
             <h3 class="subs__title">SUBSCRIBE</h3>
             <p class="subs__text">FOR OUR NEWLETTER AND PROMOTION</p>
           </div>
-          <form class="subs__form" action="">
+          <form class="subs__form" action="#">
             <input class="subs__email" id="email" type="email" name="email" placeholder="Enter your email">
             <input class="subs__submit" type="submit" value="Subscribe">
           </form>

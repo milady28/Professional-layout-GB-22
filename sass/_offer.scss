@@ -13,11 +13,34 @@
     right: 10%;
     padding-left: 16px;
     border-left: 12px solid $pink-color;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
-  }
 
-  &--main {
-    font-weight: 900;
+    &--main {
+      margin: 0;
+      font-size: 44px;
+      font-weight: 900;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .offer {
+    min-height: 368px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+
+    &__text {
+      position: relative;
+      top: inherit;
+      right: inherit;
+    }
   }
 }

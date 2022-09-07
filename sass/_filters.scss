@@ -4,13 +4,14 @@
   gap: 30px;
 
   .filter {
-    width: 100%;
+    width: 100px;
     padding: 13px 16px 16px;
     box-sizing: border-box;
     position: absolute;
     z-index: 1;
 
     &[open] {
+      width: 300px;
       background-color: #FFF;
       box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
@@ -18,7 +19,10 @@
     &-box {
       position: relative;
       height: 40px;
-      width: 360px;
+      
+      &[open] {
+        width: 360px;
+      }
     }
         
     &__link {
@@ -85,6 +89,7 @@
   .sort {
     display: flex;
     gap: 28px;
+    width: 500px;
     align-items: center;
 
     &__details {
@@ -110,6 +115,63 @@
       z-index: 1;
       top: 22px;
       left: -9px;
+    }
+
+    &__label {
+      display: flex;
+
+      & input {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .filter-sort {
+    .sort {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-sort {
+    .filter[open] {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .filter-sort {
+    .sort__summary {
+      gap: 5px;
+        font-size: 12px;
+      }
+
+    .filter[open] > summary {
+      background-image: none;
+    }
+    
+    .filter {
+      padding: 0;
+
+      &-box {
+        margin-top: 20px;
+        width: 50px;
+      }
+  
+      &__summary {
+        text-indent: -9999px;
+        background-image: url(./image/filter-mobile-icon.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+  
+        & svg {
+          display: none;
+        }
+      }
     }
   }
 }

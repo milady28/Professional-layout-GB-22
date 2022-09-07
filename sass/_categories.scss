@@ -65,3 +65,42 @@
     color: $pink-color;
   }
 }
+
+@media (max-width: 1024px) {
+  .categories {
+    &__item {
+      min-height: 168px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        min-height: 116px;
+      }
+
+      &--kids {
+        margin-right: 0;
+      }
+
+      &--accesories {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .categories {
+    &__list {
+      @include grid-temp-1;
+    }
+
+    &__item {
+      min-height: 246px;
+      margin-right: 0;
+
+      &:last-of-type {
+        grid-column-end: auto;
+      }
+    }
+  }
+}
