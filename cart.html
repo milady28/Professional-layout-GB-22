@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BRANDS - Catalog</title>
+  <title>BRANDS - Cart</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
       </div>
       <div class="header__wrapper header__wrapper--right">
         <div class="header__menu">
-          <a href="catalog.html"><img src="image/burger-icon.svg" alt="Меню"></a>
+          <label for="header__check"><img src="image/burger-icon.svg" alt="Меню"></label>
         </div>
         <div class="header__account">
           <a href="registration.html"><img src="image/personal-icon.svg" alt="Личный кабинет"></a>
@@ -36,38 +36,38 @@
         </div>
       </div>
     </div>
+    <input class="header__checkbox" id="header__check" type="checkbox">
     <nav class="header__nav nav">
-      <h3 class="nav__title">Menu</Main>
-      </h3>
+      <h3 class="nav__title">Menu</h3>
       <ul class="nav__category-list">
         <li class="nav__category-item">
           <h4 class="nav__category-name pink-text">MAN</h4>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#">Accessories</a></li>
-            <li class="nav__item"><a href="#">Bags</a></li>
-            <li class="nav__item"><a href="#">Denim</a></li>
-            <li class="nav__item"><a href="#">T-Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Accessories</a></li>
+            <li class="nav__item"><a href="catalog.html">Bags</a></li>
+            <li class="nav__item"><a href="catalog.html">Denim</a></li>
+            <li class="nav__item"><a href="catalog.html">T-Shirts</a></li>
           </ul>
         </li>
         <li class="nav__category-item">
           <h4 class="nav__category-name pink-text">WOMAN</h4>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#">Accessories</a></li>
-            <li class="nav__item"><a href="#">Jackets & Coats</a></li>
-            <li class="nav__item"><a href="#">Polos</a></li>
-            <li class="nav__item"><a href="#">T-Shirts</a></li>
-            <li class="nav__item"><a href="#">Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Accessories</a></li>
+            <li class="nav__item"><a href="catalog.html">Jackets & Coats</a></li>
+            <li class="nav__item"><a href="catalog.html">Polos</a></li>
+            <li class="nav__item"><a href="catalog.html">T-Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Shirts</a></li>
           </ul>
         </li>
         <li class="nav__category-item">
           <h4 class="nav__category-name pink-text">KIDS</h4>
           <ul class="nav__list">
-            <li class="nav__item"><a href="#">Accessories</a></li>
-            <li class="nav__item"><a href="#">Jackets & Coats</a></li>
-            <li class="nav__item"><a href="#">Polos</a></li>
-            <li class="nav__item"><a href="#">T-Shirts</a></li>
-            <li class="nav__item"><a href="#">Shirts</a></li>
-            <li class="nav__item"><a href="#">Bags</a></li>
+            <li class="nav__item"><a href="catalog.html">Accessories</a></li>
+            <li class="nav__item"><a href="catalog.html">Jackets & Coats</a></li>
+            <li class="nav__item"><a href="catalog.html">Polos</a></li>
+            <li class="nav__item"><a href="catalog.html">T-Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Shirts</a></li>
+            <li class="nav__item"><a href="catalog.html">Bags</a></li>
           </ul>
         </li>
       </ul>
@@ -121,7 +121,7 @@
         </div>
         <div class="order-form">
           <form class="order-form__form" action="#">
-            <h2>SHIPPING ADRESS</h2>
+            <h2 class="order-form__title">SHIPPING ADDRESS</h2>
             <input class="order-form__input" type="text" placeholder="Bangladesh" name="country" id="country">
             <input class="order-form__input" type="text" placeholder="State" name="state" id="state">
             <input class="order-form__input" type="text" placeholder="Postcode / Zip" name="postcode" id="postcode">
@@ -173,7 +173,7 @@
             <h3 class="subs__title">SUBSCRIBE</h3>
             <p class="subs__text">FOR OUR NEWLETTER AND PROMOTION</p>
           </div>
-          <form class="subs__form" action="">
+          <form class="subs__form" action="#">
             <input class="subs__email" id="email" type="email" name="email" placeholder="Enter your email">
             <input class="subs__submit" type="submit" value="Subscribe">
           </form>

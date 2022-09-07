@@ -21,7 +21,8 @@
 
   &__link {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     background: #F8F8F8;
   }
 
@@ -99,6 +100,31 @@
         box-shadow: none;
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .products {
+    &__list {
+      @include grid-temp-2;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .products {
+    &__list {
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    &__list {
+      @include grid-temp-1;
     }
   }
 }

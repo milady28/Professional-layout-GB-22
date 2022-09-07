@@ -24,7 +24,7 @@
         </div>
         <div class="header__wrapper header__wrapper--right">
           <div class="header__menu">
-            <a href="catalog.html"><img src="image/burger-icon.svg" alt="Меню"></a>
+            <label for="header__check"><img src="image/burger-icon.svg" alt="Меню"></label>
           </div>
           <div class="header__account">
             <a href="registration.html"><img src="image/personal-icon.svg" alt="Личный кабинет"></a>
@@ -34,9 +34,9 @@
           </div>
         </div>
       </div>
+      <input class="header__checkbox" id="header__check" type="checkbox">
       <nav class="header__nav nav">
-        <h3 class="nav__title">Menu</Main>
-        </h3>
+        <h3 class="nav__title">Menu</h3>
         <ul class="nav__category-list">
           <li class="nav__category-item">
             <h4 class="nav__category-name pink-text">MAN</h4>
@@ -92,7 +92,7 @@
           </fieldset>
           <fieldset class="reg-form__fieldset">
             <legend class="reg-form__legend">Login details</legend>
-            <input class="reg-form__input" type="email" id="email" name="email" placeholder="Email" required>
+            <input class="reg-form__input" type="email" id="reg-email" name="reg-email" placeholder="Email" required>
             <input class="reg-form__input" type="password" id="password" name="password" placeholder="Password" required>
           </fieldset>
           <p class="reg-form__add-info">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
@@ -124,7 +124,7 @@
               <h3 class="subs__title">SUBSCRIBE</h3>
               <p class="subs__text">FOR OUR NEWLETTER AND PROMOTION</p>
             </div>
-            <form class="subs__form" action="">
+            <form class="subs__form" action="#">
               <input class="subs__email" id="email" type="email" name="email" placeholder="Enter your email">
               <input class="subs__submit" type="submit" value="Subscribe">
             </form>

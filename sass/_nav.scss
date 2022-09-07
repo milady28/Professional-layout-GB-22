@@ -1,12 +1,16 @@
 .nav {
   z-index: 1;
+  display: none;
   position: absolute;
   top: 75px;
   right: 0;
+  width: 232px;
   min-height: 692px;
   padding: 36px 34px;
   background-color: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  box-sizing: border-box;
+  transition: right 0.6s;
 
   &__title {
     margin-bottom: 20px;

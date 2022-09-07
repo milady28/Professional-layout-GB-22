@@ -48,3 +48,17 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__block--left {
+      order: 1;
+      margin-top: 40px;
+    }
+  }
+}

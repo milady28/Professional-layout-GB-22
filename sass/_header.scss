@@ -1,5 +1,13 @@
 .header {
-  position: relative;
+  &__checkbox {
+    position: absolute;
+    visibility: hidden;
+    left: -9999999px;
+
+    &:checked ~ .nav {
+        display: block;
+    }
+  }
 
   &__main {
     display: flex;
@@ -22,8 +30,13 @@
   &__account {
     margin-right: 32px;
   }
+}
 
-  &__nav {
-    display: none;
+@media (max-width: 375px) {
+  .header {
+    &__account,
+    &__cart {
+      display: none;
+    }
   }
 }
