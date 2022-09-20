@@ -31,8 +31,21 @@
         <div class="header__account">
           <a href="registration.html"><img src="image/personal-icon.svg" alt="Личный кабинет"></a>
         </div>
-        <div class="header__cart">
-          <a href="cart.html"><img src="image/cart-icon.svg" alt="Корзина"></a>
+        <div class="header__basket">
+          <div class="header__basket-btn"><img src="image/cart-icon.svg" alt="Корзина">
+            <span class="basket-counter">0</span>
+          </div>
+          <div class="header__basket-wrap">
+            <table>
+              <tr>
+                <th>Название товара</th>
+                <th>Количество</th>
+                <th>Цена за шт.</th>
+                <th>Итого</th>
+              </tr>
+            </table>
+            <p>Товаров в корзине на сумму: $<span class="basket__total-price"></span></p>
+          </div>
         </div>
       </div>
     </div>
@@ -228,5 +241,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/basket.js"></script>
 </body>
 </html>

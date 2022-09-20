@@ -20,7 +20,6 @@
   }
 
   &__link {
-    position: relative;
     display: flex;
     flex-direction: column;
     background: #F8F8F8;
@@ -52,7 +51,6 @@
     width: 140px;
     height: 44px;
     color: #FFFFFF;
-    background-color: inherit;
     border: 1px solid #fff;
     cursor: pointer;
 

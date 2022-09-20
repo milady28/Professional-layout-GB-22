@@ -30,12 +30,73 @@
   &__account {
     margin-right: 32px;
   }
+
+  &__basket {
+    position: relative;
+
+    &-btn {
+      position: relative;
+      cursor: pointer;
+
+      & .basket-counter {
+        position: absolute;
+        top: -10px;
+        right: -12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        color: white;
+        border-radius: 100%;
+        background-color: $pink-color; 
+      }
+    }
+
+    &-wrap {
+      display: none;
+      z-index: 1;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      flex-direction: column;
+      align-items: end;
+      width: 450px;
+      padding: 16px;
+      background-color: white;
+
+      &.active {
+        display: flex;
+      }
+
+      & table {
+        width: 100%;
+      }
+
+      & tr {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+      }
+
+      & th {
+        max-width: 80px;
+      }
+
+      & p {
+        font-weight: 600;
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 375px) {
   .header {
     &__account,
-    &__cart {
+    &__basket {
       display: none;
     }
   }
